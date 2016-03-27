@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+
+	/*
+		2.扩展选择器
+			a。组合选择器，用，号隔开多个选择器
+			b, 关联选择器（后代选择器） 用空格隔开主逐级往里
+			c, 伪类选择器
+				1,静态伪类（只能用于超链接）
+				2，动态伪类 ：onfocus 获得焦点
+							  active 点击控件
+							  hover 鼠标移动到某个控件上面
+	*/
+
+	div,p,h1 .one #two{
+		border:5px double blue;
+		}
+
+	h1 b{
+		color:red;
+	}
+
+	h1 b i{
+		color:blue;
+	}
+
+	a:link{
+		color:red;
+	}
+
+	a:visited{
+		color:blue;
+	}
+	
+	input:focus{
+		border:1px solid red;
+		color:red;
+	}
+
+	p:active{
+		color:blue;
+	}
+	div:hover{
+		background:green;
+	}
+
+  </style>
+
+ </head>
+ <body>
+	<div>你好</div>
+	<p>nihao</p>
+	<h1>nihao</h1>
+	<h1>我与<b><i>杀戮之中</i>绽放</b>，亦如黎明版的花朵</h1>
+	<a href="https://www.baidu.com">百度</a>
+	<input tupe="text">
+ </body>
+</html>
